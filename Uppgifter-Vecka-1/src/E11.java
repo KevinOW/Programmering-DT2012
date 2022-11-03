@@ -17,8 +17,10 @@ public class E11{
     int y = Integer.parseInt(args[1]);
     int z = Integer.parseInt(args[2]);
 
-    int min = Math.min(x, Math.min(x, y));
-    int max = Math.max(x, Math.max(x, y));
+    int a = Math.min(x,y);
+    int b = Math.max(x,y);
+    int min = Math.min(a,z);
+    int max = Math.max(b,z);
     int median = x + y + z - min - max;
 
     System.out.println(min);
