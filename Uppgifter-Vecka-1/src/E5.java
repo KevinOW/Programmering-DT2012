@@ -18,8 +18,8 @@ public class E5{
     int n = Integer.parseInt(args[2]);
 
     // Modify these two assignments to assign the required values.
-    int plus_mod  = 0;
-    int times_mod = 0;
+    int plus_mod  = (x + y) % n;
+    int times_mod = (x * y) % n;
 
     System.out.println("[" + x + " + " + y + "] in Z_" + n
                       + " is " + plus_mod);
