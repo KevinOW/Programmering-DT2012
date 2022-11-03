@@ -19,7 +19,7 @@ public class E11{
 
     int min = Math.min(x, Math.min(x, y));
     int max = Math.max(x, Math.max(x, y));
-    int median = x + y - z - min - max;
+    int median = x + y + z - min - max;
 
     System.out.println(min);
     System.out.println(median);
