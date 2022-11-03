@@ -16,6 +16,11 @@ public class E8{
   public static void main(String[] args) {
 
     // your code here
+    double x = Double.parseDouble(args[0]);
+    double y = Double.parseDouble(args[1]);
+    double z = Double.parseDouble(args[2]);
+
+    System.out.println("The distance to 0,0,0 is " + Math.sqrt(Math.pow(x, 2) + Math.pow(y, 2) + Math.pow(z, 2)));
 
   }
 
