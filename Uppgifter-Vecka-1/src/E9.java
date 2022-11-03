@@ -15,8 +15,8 @@ public class E9{
     int dice1;
     int dice2;
     int totalSum;
-    dice1 = (int)(Math.random()*6) + 1;
-    dice2 = (int)(Math.random()*6) + 1;
+    dice1 = (int)(Math.random()*6 + 1);
+    dice2 = (int)(Math.random()*6 + 1);
     totalSum = dice1 + dice2;
 
     System.out.println("The first die comes up to " + dice1);

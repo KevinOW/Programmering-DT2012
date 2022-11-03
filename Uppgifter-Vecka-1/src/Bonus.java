@@ -19,12 +19,33 @@ public class Bonus{
 
   public static void main(String[] args) {
     // Your code here.
-    int count = 11;
-    String x, y, z;
+    String x, y, z,w1,w2,w3,w4,w5,w6,w7, w8;
     x = "a";
     y = "b";
-    z = "ba";
+    z = y+x;
+    w1 = z+y;
+    w2 = w1+z;
+    w3 = w2+w1;
+    w4 = w3+w2;
+    w5 = w4+w3;
+    w6 = w5+w4;
+    w7 = w6+w5;
+    w8 = w7+w6;
 
+
+    System.out.println("word 0: " + x
+           + "\nword 1: " + y
+            + "\nword 2: " + z
+            + "\nword 3: " + w1
+            + "\nword 4: " + w2
+            + "\nword 5: " + w3
+            + "\nword 6: " + w4
+            + "\nword 7: " + w5
+            + "\nword 8: " + w6
+            + "\nword 9: " + w7
+            + "\nword 10: " + w8
+
+    );
 
 
 
