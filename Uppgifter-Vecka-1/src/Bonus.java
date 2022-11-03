@@ -32,7 +32,6 @@ public class Bonus{
     w7 = w6+w5;
     w8 = w7+w6;
 
-
     System.out.println("word 0: " + x
            + "\nword 1: " + y
             + "\nword 2: " + z
@@ -44,14 +43,6 @@ public class Bonus{
             + "\nword 8: " + w6
             + "\nword 9: " + w7
             + "\nword 10: " + w8
-
     );
-
-
-
-
-
-
   }
-
 }
