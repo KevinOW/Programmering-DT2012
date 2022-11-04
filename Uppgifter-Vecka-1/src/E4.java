@@ -26,7 +26,7 @@ public class E4 {
     // change 0 to the expression with the required value
 
     int tell_me_the_hour = 0;
-
+    tell_me_the_hour = (current_hour + added_hours)%24;
     System.out.println("In " + added_hours + " hours the time would be " + tell_me_the_hour);
 
   }
