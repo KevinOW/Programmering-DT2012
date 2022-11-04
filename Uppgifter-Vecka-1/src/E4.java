@@ -22,15 +22,12 @@ public class E4 {
 
     int current_hour = Integer.parseInt(args[0]);
     int added_hours  = Integer.parseInt(args[1]);
-
     // Your task:
     // change 0 to the expression with the required value
 
     int tell_me_the_hour = 0;
-    System.out.println("In "
-                      + added_hours
-                      + " hours the time would be "
-                      + tell_me_the_hour);
+
+    System.out.println("In " + added_hours + " hours the time would be " + tell_me_the_hour);
 
   }
 
