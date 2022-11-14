@@ -32,11 +32,11 @@ public class Bonus {
     long upc = Long.parseLong(cmdLn[0]);
     int sum = 0;
     String input = cmdLn[0];
-    for (int i = 2; i <= 12; i++){
+    for (int i = 2; i <= 12; i++) {
       double v = (upc / Math.pow(10, i - 2)) % 10;
-      if (i % 2 == 0){
-        sum += 3*(int) v;
-      }else {
+      if (i % 2 == 0) {
+        sum += 3 * (int) v;
+      } else {
         sum += (int) v;
       }
     }
