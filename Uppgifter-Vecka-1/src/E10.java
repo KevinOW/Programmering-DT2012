@@ -23,7 +23,7 @@ public class E10{
 
       double min = Math.min(value1, Math.min(value2, Math.min(value3,Math.min(value4, value5))));
       double max = Math.max(value1, Math.max(value2, Math.max(value3,Math.max(value4, value5))));
-      double avg = (value1 + value2 + value3 + value4 + value5 / n);
+      double avg = ((value1 + value2 + value3 + value4 + value5) / n);
       System.out.println("Avg.: " + avg);
       System.out.println("Min: " + min);
       System.out.println("Max: " + max);
