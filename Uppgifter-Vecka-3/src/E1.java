@@ -42,13 +42,15 @@ public class E1{
     System.out.println(trials);
     System.out.println(dices);
 
-    for(int i = 1; i <= dices; i++){
-      for(int j = 1; i <= trials; i++)
+    for(int i = 1; i <= trials; i++){
+      for(int j = 1; j <= dices; j++){
+        int dice1 = (int)(Math.random()*6 + 1);
 
-      dice1 = (int)(Math.random()*6 + 1);
+        System.out.print(dice1 + " ");
+        
+      }
 
+      System.out.println(" ");
     }
-
-    System.out.println();
   }
 }

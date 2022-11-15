@@ -9,7 +9,7 @@ The user provides 10 in the command line.
 The sequence of numbers is provided from the keyboard.
 Notice how the user  terminates input to the program
 using Ctrl D (in a unix system) or Ctrl Z (iin a windows system).
-s 
+
 The only output is the final message with the count.
 
 java E2 10
@@ -32,7 +32,7 @@ public class E2{
     int n = Integer.parseInt(args[0]);
     Scanner data = new Scanner(System.in);
 
-    // Your code here
+    
 
   }
 }
