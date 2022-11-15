@@ -27,21 +27,23 @@ Your task is to complete the program after
   // Your code here
 */
 import java.util.Scanner;
-public class E2{
+
+public class E2 {
   public static void main(String[] args) {
     int n = Integer.parseInt(args[0]);
     Scanner data = new Scanner(System.in);
 
-    int count = 0;
-    int L_data = 0;
+    int count = 0, L_data = 0;
 
-    while (data.hasNext()){
+    while (data.hasNext()) {
       L_data = data.nextInt();
-      if(L_data == n){
+      if (L_data == n) {
         count++;
+
       }
     }
     data.close();
+
     System.out.println("Number " + n + " occured " + count + " time.");
 
   }

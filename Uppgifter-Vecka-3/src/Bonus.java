@@ -1,35 +1,34 @@
 /*
-
-Write a program that 
+Write a program that
  * takes integers M and N from the command line,
- * generates M random permutations of the numbers 0 to N-1, 
- * and prints 
+ * generates M random permutations of the numbers 0 to N-1,
+ * and prints
         - the permutations
-        - the number of left-to-right-minima of each permutation  
-	- the average  of the left-to-right minima 
+        - the number of left-to-right-minima of each permutation
+	- the average  of the left-to-right minima
 
 We first explain what left-to-right minima is.
-The number of left-to-right minima for a sequence of numbers is a count 
-of how many times you see a smaller number than the minimum number you have seen until now. 
+The number of left-to-right minima for a sequence of numbers is a count
+of how many times you see a smaller number than the minimum number you have seen until now.
 
-For example, if the permutation of numbers 0 to 9 is 
+For example, if the permutation of numbers 0 to 9 is
 4 8 2 1 9 0 5 3 7 6
-then the number of left-to-right minima is 4 because: 
-First 4 is the smallest element seen so far (the first element is always the smallest element seen so far at the start!), 
+then the number of left-to-right minima is 4 because:
+First 4 is the smallest element seen so far (the first element is always the smallest element seen so far at the start!),
 then 2 is the smallest element seen so far
 Then 1 is the smallest element seen so far
 Finally 0 is the smallest element seen so far
 So 4 is the number of times an element is the smallest seen so far: 4 is the number of left-to-right minima.
 
-Another example, if the permutation of numbers 0 to 9 is 
+Another example, if the permutation of numbers 0 to 9 is
 6 9 7 5 0 2 8 4 1 3
 then the number of left-to-right minima is 3.
 First you see 6, then 5 is smaller and then 0 is smaller.
 
 Now to the program you have to write.
-In this program you have to generate several permutations (M from the command line) 
-all for the numbers 0..N-1 (N from the command line) 
-and you have to print the  permutations, the number left-to-right minima for each permutation 
+In this program you have to generate several permutations (M from the command line)
+all for the numbers 0..N-1 (N from the command line)
+and you have to print the  permutations, the number left-to-right minima for each permutation
 and the average of these values.
 
 Example:
@@ -42,11 +41,11 @@ java Bonus 5 10
 
 2.2
 
-The program generated and printed permutation 5 0 2 1 8 4 6 3 9 7 
+The program generated and printed permutation 5 0 2 1 8 4 6 3 9 7
 and calculated the number of left-to-right minima 2 (printed in parenthesis after the permutation).
 Generated four more permutations, printed them and printed the corresponding number of left-to-right minima in parenthesis.
 
-Finally it calculated and printed the average (2 + 4 + 3 + 1 +1) / 5 that is the 2.2 you see. 
+Finally it calculated and printed the average (2 + 4 + 3 + 1 +1) / 5 that is the 2.2 you see.
 
 
 */
