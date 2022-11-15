@@ -32,7 +32,17 @@ public class E2{
     int n = Integer.parseInt(args[0]);
     Scanner data = new Scanner(System.in);
 
-    
+    int count = 0;
+    int L_data = 0;
+
+    while (data.hasNext()){
+      L_data = data.nextInt();
+      if(L_data == n){
+        count++;
+      }
+    }
+    data.close();
+    System.out.println("Number " + n + " occured " + count + " time.");
 
   }
 }
