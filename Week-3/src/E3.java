@@ -40,6 +40,11 @@ import java.util.Scanner;
 public class E3{
   public static void main(String[] args) {
     Scanner data = new Scanner(System.in);
-    // Your code here.
+
+
+
+
+
+    data.close();
   }
 }
