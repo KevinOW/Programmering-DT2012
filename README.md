@@ -1,4 +1,4 @@
-![Java Logo](https://freepngimg.com/thumb/java/85390-java-language-text-programming-logo-programmer-thumb.png)
+![Java Logo](https://img1.daumcdn.net/thumb/R300x0/?fname=https://k.kakaocdn.net/dn/oDiwG/btrJKtqCAMK/shfnJpaquOrqPbvEwM1mnK/img.png)
 
 # Programmering i Java - Halmstad Högskola (2022)
 
