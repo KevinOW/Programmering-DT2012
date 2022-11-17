@@ -1,8 +1,9 @@
 # Programmering-DT2012
 Inlämningsuppgift
 
-Week 1
+[Week 1](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-1)
 
-Week 2
+[Week 2](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-2)
 
-Week 3
+[Week 3](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-3)
+
