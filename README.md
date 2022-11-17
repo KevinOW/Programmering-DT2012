@@ -1,7 +1,3 @@
-
-
-
-<img src="[https://github.com/favicon.ico](https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png)" width="250">
 # Programmering-DT2012
 
 [Week 1](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-1)
