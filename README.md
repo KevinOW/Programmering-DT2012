@@ -1,4 +1,4 @@
-![Java Logo](https://img1.daumcdn.net/thumb/R300x0/?fname=https://k.kakaocdn.net/dn/oDiwG/btrJKtqCAMK/shfnJpaquOrqPbvEwM1mnK/img.png)
+<img align="center" width="300" height="300" src="https://img1.daumcdn.net/thumb/R300x0/?fname=https://k.kakaocdn.net/dn/oDiwG/btrJKtqCAMK/shfnJpaquOrqPbvEwM1mnK/img.png">
 
 # Programmering i Java - Halmstad Högskola (2022)
 
