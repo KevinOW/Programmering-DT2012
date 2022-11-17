@@ -1,5 +1,4 @@
 # Programmering-DT2012
-Inlämningsuppgift
 
 [Week 1](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-1)
 
