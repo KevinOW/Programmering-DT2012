@@ -37,14 +37,24 @@ terminate quietly.
 */
 import java.util.Scanner;
 
-public class E3{
+public class E3 {
   public static void main(String[] args) {
-    Scanner data = new Scanner(System.in);
+    Scanner input = new Scanner(System.in);
 
+    if (input.hasNext()) {
+      int n = input.nextInt();
+      int counter = 1;
 
+      while (input.hasNext()) {
+        int temp = input.nextInt();
+        if (temp == n) {
+          counter++;
+        }
+      }
+      input.close();
 
+      System.out.println("Number: " + n + " occours " + counter + " times");
 
-
-    data.close();
+    }
   }
 }

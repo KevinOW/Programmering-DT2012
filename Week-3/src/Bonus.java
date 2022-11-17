@@ -47,13 +47,49 @@ Generated four more permutations, printed them and printed the corresponding num
 
 Finally it calculated and printed the average (2 + 4 + 3 + 1 +1) / 5 that is the 2.2 you see.
 
-
 */
 /*
   Your task is to complete the program.
 */
-public class Bonus{
+
+public class Bonus {
   public static void main(String[] args) {
+    int n = Integer.parseInt(args[0]);
+    int m = Integer.parseInt(args[1]);
+
+    int[] permutation = new int[n];
+    int _runTest = 0, _smallest = 0, _countSmall = 0, _sum = 0;
+    double _avg = 0;
+
+    while (_runTest != m) {
+      for (int i = 0; i < n; i++) {
+        permutation[i] = i;
+      }
+      for (int i = 0; i < n; i++) {
+        int r = (int) (Math.random() * (i + 1));
+        int swap = permutation[r];
+        permutation[r] = permutation[i];
+        permutation[i] = swap;
+      }
+
+      _smallest = permutation[0];
+      for (int i = 0; i < n; i++) {
+        System.out.print(permutation[i] + " ");
+        if (_smallest > permutation[i]) {
+          _smallest = (int) permutation[i];
+          _countSmall++;
+        }
+      }
+
+      System.out.print("(" + _countSmall + ")");
+      System.out.println();
+      _sum += _countSmall;
+      _runTest++;
+      _countSmall = 0;
+
+    }
+    _avg = (double) _sum / n;
+    System.out.println(_avg);
 
   }
 }

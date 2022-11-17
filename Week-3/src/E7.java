@@ -33,26 +33,30 @@ The code you get already calculates the permutation.
 
 */
 
-public class E7{
+public class E7 {
   public static void main(String[] args) {
     int n = Integer.parseInt(args[0]);
     int[] permutation = new int[n];
 
-    // all numbers 0..n-1 in order
-    for(int i = 0; i < n; i++){
+    for (int i = 0; i < n; i++) {
       permutation[i] = i;
     }
-    // shuffle the numbers
-    // code from the course book
+
     for (int i = 0; i < n; i++) {
-      int r = (int) (Math.random() * (i+1));     // int between 0 and i
+      int r = (int) (Math.random() * (i + 1));
       int swap = permutation[r];
       permutation[r] = permutation[i];
       permutation[i] = swap;
     }
-    // the permutation is now in the array permutation!
 
-    // Your code here
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+      System.out.println(i + " " + permutation[i]);
+      if (i == permutation[i]) {
+        count++;
+      }
+    }
+    System.out.println(count + " elements are in place");
 
   }
 }

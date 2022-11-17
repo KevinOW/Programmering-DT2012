@@ -34,20 +34,18 @@ to a file as follows:
     java E1 1000 3 > three_dices
 */
 
-public class E1{
+public class E1 {
   public static void main(String[] args) {
-    int trials = Integer.parseInt(args[0]);
-    int dices  = Integer.parseInt(args[1]);
+    int _t = Integer.parseInt(args[0]);
+    int _d = Integer.parseInt(args[1]);
 
-    System.out.println(trials);
-    System.out.println(dices);
+    System.out.println(_t);
+    System.out.println(_d);
 
-    for(int i = 1; i <= trials; i++){
-      for(int j = 1; j <= dices; j++){
-        int dice1 = (int)(Math.random()*6 + 1);
-
+    for (int i = 1; i <= _t; i++) {
+      for (int j = 1; j <= _d; j++) {
+        int dice1 = (int) (Math.random() * 6 + 1);
         System.out.print(dice1 + " ");
-        
       }
 
       System.out.println(" ");

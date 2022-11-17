@@ -31,18 +31,18 @@ import java.util.Scanner;
 public class E2 {
   public static void main(String[] args) {
     int n = Integer.parseInt(args[0]);
-    Scanner data = new Scanner(System.in);
+    Scanner input = new Scanner(System.in);
 
     int count = 0, L_data = 0;
 
-    while (data.hasNext()) {
-      L_data = data.nextInt();
+    while (input.hasNext()) {
+      L_data = input.nextInt();
       if (L_data == n) {
         count++;
 
       }
     }
-    data.close();
+    input.close();
 
     System.out.println("Number " + n + " occured " + count + " time.");
 

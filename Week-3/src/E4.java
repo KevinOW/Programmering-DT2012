@@ -21,10 +21,30 @@ Your task is to complete the program after
 
   Make sure your program has this behaviour.
 */
+
 import java.util.Scanner;
-public class E4{
+
+public class E4 {
   public static void main(String[] args) {
-      Scanner data = new Scanner(System.in);
-      // Your code here
+    Scanner input = new Scanner(System.in);
+
+    int p_digit = 0, count = 0;
+    int[] _arrayList = new int[20];
+
+    while (input.hasNext()) {
+      int n = input.nextInt();
+
+      if (n == p_digit) {
+      } else {
+        _arrayList[count] = n;
+        count++;
+      }
+      p_digit = n;
+    }
+    input.close();
+    for (int i = 0; i < count; i++) {
+      System.out.print(_arrayList[i] + " ");
+    }
+
   }
 }

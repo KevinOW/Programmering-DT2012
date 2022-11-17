@@ -4,7 +4,7 @@ The program uses standard input to read
 and
   N x M integers between 1 and 6.
 (This is how the output of exercise E1 looks like:
-    N was the number of trials and 
+    N was the number of trials and
     M was the number of dices used in each trial.
 )
 
@@ -42,10 +42,36 @@ occurs in the sequence of trials.
 
 */
 
-
 import java.util.Scanner;
-public class E6{
+
+public class E6 {
   public static void main(String[] args) {
-    // Your code here
+    Scanner input = new Scanner(System.in);
+
+    int _t = input.nextInt();
+    int _d = input.nextInt();
+    input.close();
+
+    int[] intArr = new int[6 * _d + 1];
+
+    for (int i = 0; i < _t; i++) {
+      int sum = 0;
+      for (int j = 0; j < _d; j++) {
+        int dice = (int) ((Math.random() * 6) + 1);
+        sum += dice;
+        System.out.print(dice + " ");
+      }
+      intArr[sum] += 1;
+      System.out.println(" ");
+
+    }
+    int FreqSum = 0;
+    for (int j = 0; j < intArr.length; j++) {
+      if (intArr[j] > intArr[FreqSum]) {
+        FreqSum = j;
+      }
+    }
+    System.out.println("The most frequent sum is: " + FreqSum
+        + "\nit occurs " + intArr[FreqSum] + " Times");
   }
 }

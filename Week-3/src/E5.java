@@ -26,10 +26,26 @@ the average.
 */
 
 import java.util.Scanner;
-public class E5{
+
+public class E5 {
   public static void main(String[] args) {
     int n = Integer.parseInt(args[0]);
-    Scanner data = new Scanner(System.in);    
-    // Your code here
+    Scanner input = new Scanner(System.in);
+
+    int[] arrValues = new int[n];
+    int sum = 0;
+    for (int i = 0; i < n; i++) {
+      arrValues[i] = input.nextInt();
+      sum += arrValues[i];
+    }
+    double avg = (double)sum/n;
+    int counter = 0;
+    for (int i = 0; i < n; i++) {
+      if (arrValues[i]>avg) {
+        counter++;
+      }
+    }
+    input.close();
+    System.out.println(counter + " of " + n + " values were above the average " +  avg);
   }
 }
