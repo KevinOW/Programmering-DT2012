@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="460" height="300" src="[http://www.fillmurray.com/460/300](https://img1.daumcdn.net/thumb/R300x0/?fname=https://k.kakaocdn.net/dn/oDiwG/btrJKtqCAMK/shfnJpaquOrqPbvEwM1mnK/img.png)">
+  <img width="300" height="300" src="https://img1.daumcdn.net/thumb/R300x0/?fname=https://k.kakaocdn.net/dn/oDiwG/btrJKtqCAMK/shfnJpaquOrqPbvEwM1mnK/img.png">
 </p>
 
 # Programmering i Java - Halmstad Högskola (2022)
