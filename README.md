@@ -1,6 +1,6 @@
 ![Java Logo](https://freepngimg.com/thumb/java/85390-java-language-text-programming-logo-programmer-thumb.png)
 
-# Programmering-DT2012
+# Programmering i Java - Halmstad Högskola (2022)
 
 [Week 1](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-1)
 
