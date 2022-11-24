@@ -37,10 +37,10 @@ public class E9 {
     int k = Integer.parseInt(args[0]);
 
     for (int i = 1; i<=k; i++){
-      System.out.println("\n" + i + ": ");
+      System.out.print("\n" + i + ": ");
       for (int j = 2; j < i; j++){
         if (i % j == 0){
-          System.out.println("*");
+          System.out.print("*");
         }
       }
     }

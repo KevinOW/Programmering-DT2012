@@ -24,6 +24,7 @@ public class E4{
     int m = 0;
     System.out.println("The initial value of n is: " + n);
     System.out.println("The initial value of m is: " + m);
+    
     while(n != 0){
       m = (10 * m) + (n % 10);
       n = n / 10;
