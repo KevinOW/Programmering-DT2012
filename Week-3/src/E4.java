@@ -45,6 +45,5 @@ public class E4 {
     for (int i = 0; i < count; i++) {
       System.out.print(_arrayList[i] + " ");
     }
-
   }
 }
