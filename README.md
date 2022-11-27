@@ -3,6 +3,7 @@
 </p>
 
 # Programming in Java - Halmstad University (2022)
+## This is a repository for me to keep track of all my weekly assignments. Nothing special..
 
 [Week 1](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-1)
 
@@ -12,4 +13,3 @@
 
 [Week 4](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-4)
 
-This is a repository for me to keep track of all my weekly assignments. Nothing special..
