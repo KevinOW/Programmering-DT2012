@@ -11,3 +11,5 @@
 [Week 3](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-3)
 
 [Week 4](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-4)
+
+This is a repository for me to keep track of all my weekly assignments. Nothing special..
