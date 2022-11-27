@@ -92,14 +92,14 @@ public class NumericalArrays {
      * Returns the smallest value in the array of doubles it gets as argument.
      */
     public static double min(double[] NumArray) {
-        double[] arr = new double[NumArray.length];
-        double min = arr[0];
+        double[] Array = new double[NumArray.length];
+        double min = Array[0];
         for (int i = 0; i < NumArray.length; i++) {
-            arr[i] = NumArray[i];
-            if (arr[0] < min)
+            Array[i] = NumArray[i];
+            if (Array[0] < min)
                 ;
             {
-                min = arr[0];
+                min = Array[0];
             }
         }
         return min;
@@ -109,12 +109,12 @@ public class NumericalArrays {
      * Returns the largest value in in the array of doubles it gets as argument.
      */
     public static double max(double[] NumArray) {
-        double[] arr = new double[NumArray.length];
-        double max = arr[0];
+        double[] Array = new double[NumArray.length];
+        double max = Array[0];
         for (int i = 0; i < NumArray.length; i++) {
-            arr[i] = NumArray[i];
-            if (arr[i] > max) {
-                max = arr[i];
+            Array[i] = NumArray[i];
+            if (Array[i] > max) {
+                max = Array[i];
             }
         }
         return max;
@@ -124,14 +124,14 @@ public class NumericalArrays {
      * Returns the smallest value in in the array of ints it gets as argument.
      */
     public static int min(int[] NumArray) {
-        int[] arr = new int[NumArray.length];
-        int min = arr[0];
+        int[] Array = new int[NumArray.length];
+        int min = Array[0];
         for (int i = 0; i < NumArray.length; i++) {
-            arr[i] = NumArray[i];
-            if (arr[0] < min)
+            Array[i] = NumArray[i];
+            if (Array[0] < min)
                 ;
             {
-                min = arr[0];
+                min = Array[0];
             }
         }
         return min;
@@ -142,12 +142,12 @@ public class NumericalArrays {
      */
     public static int max(int[] NumArray
 ) {
-        int[] arr = new int[NumArray.length];
-        int max = arr[0];
+        int[] Array = new int[NumArray.length];
+        int max = Array[0];
         for (int i = 0; i < NumArray.length; i++) {
-            arr[i] = NumArray[i];
-            if (arr[i] > max) {
-                max = arr[i];
+            Array[i] = NumArray[i];
+            if (Array[i] > max) {
+                max = Array[i];
             }
         }
         return max;
@@ -314,14 +314,14 @@ public class NumericalArrays {
      *
      * Complete the definition of the method running average.
      */
-    public static double[] runningAverage(double[] values, int window) {
-        double[] averages = new double[values.length - window + 1];
+    public static double[] runningAverage(double[] values, int win) {
+        double[] averages = new double[values.length - win + 1];
         double init = 0;
-        for (int j = 0; j < (values.length - window + 1); j++) {
-            for (int i = 0; i < window; i++) {
+        for (int j = 0; j < (values.length - win + 1); j++) {
+            for (int i = 0; i < win; i++) {
                 init += values[i + j];
             }
-            averages[j] = init / window;
+            averages[j] = init / win;
             init = 0;
         }
         return averages;
