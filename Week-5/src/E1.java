@@ -78,27 +78,27 @@ public class E1 {
   public static void main(String[] args) {
     Color x = new Color(Integer.parseInt(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]));
     Color xy = new Color(Integer.parseInt(args[3]), Integer.parseInt(args[4]), Integer.parseInt(args[5]));
-    Color ColorChanger = new Color(0, 0, 0);
-    Color ColorChanger_1 = new Color(0, 0, 0);
+    Color z = new Color(0, 0, 0);
+    Color y = new Color(0, 0, 0);
 
     StdDraw.setXscale(0, 3);
     StdDraw.setYscale(0, 3);
 
     drawInside(1.5, 1.5, 0.25, x, xy);
-    ColorChanger = Luminance.toGray(x);
-    ColorChanger_1 = Luminance.toGray(xy);
+    z = Luminance.toGray(x);
+    y = Luminance.toGray(xy);
 
     drawInside(0.5, 0.5, 0.25, x, xy);
-    ColorChanger = toRed(x);
-    ColorChanger_1 = toRed(xy);
+    z = toRed(x);
+    y = toRed(xy);
 
     drawInside(0.5, 2.5, 0.25, x, xy);
-    ColorChanger = toGreen(x);
-    ColorChanger_1 = toGreen(xy);
+    z = toGreen(x);
+    y = toGreen(xy);
 
     drawInside(2.5, 2.5, 0.25, x, xy);
-    ColorChanger = toBlue(x);
-    ColorChanger_1 = toBlue(xy);
+    z = toBlue(x);
+    y = toBlue(xy);
 
     drawInside(2.5, 0.5, 0.25, x, xy);
 

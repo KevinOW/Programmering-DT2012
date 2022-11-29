@@ -46,9 +46,16 @@ public class Bonus {
    *
    */
   private static Color[] neighbours(int x, int y, Picture p) {
-    // Your code here.
-    // remove return new Color[]{};
-    return new Color[] {};
+    Color[] cs = new Color[9];
+    int count = 0;
+    for (int i = x - 1; i < x + 1; i++) {
+      for (int j = y - 1; j < x + 1; j++) {
+        Color c = p.get(i, j);
+        cs[count] = c;
+        count++;
+      }
+    }
+    return cs;
   }
 
   public static void main(String[] args) {
