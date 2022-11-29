@@ -16,11 +16,10 @@ and prints to standard output the values of logistic(L,k,x0,x)
 for all the values of x in the array x_values.
 */
 
+public class E1 {
 
-  public class E1{
-
-    public static double logistic(double L, double k, double x0, double x){
-    return L / (1+Math.exp(-k*(x-x0)));
+  public static double logistic(double L, double k, double x0, double x) {
+    return L / (1 + Math.exp(-k * (x - x0)));
   }
 
   public static void main(String[] args) {
@@ -31,9 +30,9 @@ for all the values of x in the array x_values.
     double[] x_values = { -1.0, -0.9, -0.8, -0.7, -0.6, -0.5, -0.4, -0.3, -0.2, -0.1, 0.0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6,
         0.7, 0.8, 0.9, 1.0 };
 
-      for(int i = 0; i < x_values.length; i++){
-        double logistics = logistic(param_L, param_k, param_x0, x_values[i]);
-        System.out.println(logistics);
+    for (int i = 0; i < x_values.length; i++) {
+      double logistics = logistic(param_L, param_k, param_x0, x_values[i]);
+      System.out.println(logistics);
     }
   }
 }
