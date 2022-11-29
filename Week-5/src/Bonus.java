@@ -33,10 +33,29 @@ public class Bonus {
    * of the corresponding RGB components. Each component might need to be
    * adjusted so that it stays in range (0-255).
    */
+
   private static Color average(Color[] colors, int[] weights) {
-    // Your code here.
-    // remove return new Color(0, 0, 0);
-    return new Color(0, 0, 0);
+    int Red = 0;
+    int Green = 0;
+    int Blue = 0;
+    int count = 0;
+    for (int i = 0; i < 9; i++) {
+      Red += (colors[i].getRed() * weights[i]);
+      Green += (colors[i].getGreen() * weights[i]);
+      Blue += (colors[i].getBlue() * weights[i]);
+      count++;
+
+    }
+    if (Red < 0) {
+      Red = Red * -1;
+    }
+    if (Green < 0) {
+      Green = Green * -1;
+    }
+    if (Blue < 0) {
+      Blue = Blue * -1;
+    }
+    return new Color(((Red / count) % 255), ((Green / count) % 255), ((Blue / count) % 255));
   }
 
   /*
@@ -46,10 +65,12 @@ public class Bonus {
    *
    */
   private static Color[] neighbours(int x, int y, Picture p) {
+    // Your code here.
+    // remove return new Color[]{};
     Color[] cs = new Color[9];
     int count = 0;
-    for (int i = x - 1; i < x + 1; i++) {
-      for (int j = y - 1; j < x + 1; j++) {
+    for (int i = x - 1; i <= x + 1; i++) {
+      for (int j = y - 1; j <= y + 1; j++) {
         Color c = p.get(i, j);
         cs[count] = c;
         count++;

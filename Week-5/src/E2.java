@@ -26,6 +26,7 @@ public class E2 {
    *
    */
   public static Color mix(double alpha, Color c1, Color c2) {
+
     return new Color((int) ((alpha * c1.getRed()) + (1 - alpha) * c2.getRed()),
         (int) ((alpha * c1.getGreen()) + (1 - alpha) * c2.getGreen()),
         (int) ((alpha * c1.getBlue()) + (1 - alpha) * c2.getBlue()));
