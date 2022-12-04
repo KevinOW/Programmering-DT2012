@@ -43,19 +43,30 @@ public class Bonus {
       Red += (colors[i].getRed() * weights[i]);
       Green += (colors[i].getGreen() * weights[i]);
       Blue += (colors[i].getBlue() * weights[i]);
-      count++;
 
+      count++;
     }
-    if (Red < 0) {
-      Red = Red * -1;
+    Red /= count;
+    Green /= count;
+    Blue /= count;
+
+    if (Red > 255) {
+      Red = 255;
+    } else if (Red < 0) {
+      Red = 0;
     }
-    if (Green < 0) {
-      Green = Green * -1;
+    if (Green > 255) {
+      Green = 255;
+    } else if (Green < 0) {
+      Green = 0;
     }
-    if (Blue < 0) {
-      Blue = Blue * -1;
+    if (Blue > 255) {
+      Blue = 255;
+    } else if (Blue < 0) {
+      Blue = 0;
     }
-    return new Color(((Red / count) % 255), ((Green / count) % 255), ((Blue / count) % 255));
+
+    return new Color((Red), (Green), (Blue));
   }
 
   /*
@@ -65,8 +76,6 @@ public class Bonus {
    *
    */
   private static Color[] neighbours(int x, int y, Picture p) {
-    // Your code here.
-    // remove return new Color[]{};
     Color[] cs = new Color[9];
     int count = 0;
     for (int i = x - 1; i <= x + 1; i++) {

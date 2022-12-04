@@ -28,11 +28,11 @@ public class E3 {
    * The three integers should be provided in the command liner
    */
   public static void main(String[] args) {
-    int r = Integer.parseInt(args[0]);
-    int g = Integer.parseInt(args[1]);
-    int b = Integer.parseInt(args[2]);
+    int Red = Integer.parseInt(args[0]);
+    int Green = Integer.parseInt(args[1]);
+    int Blue = Integer.parseInt(args[2]);
 
-    Color col = new Color(r, g, b);
+    Color col = new Color(Red, Green, Blue);
     StdDraw.setPenColor(col);
     StdDraw.filledSquare(0.5, 0.5, 0.25);
     StdDraw.setPenColor(complement(col));
