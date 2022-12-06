@@ -1,3 +1,4 @@
+
 /*
 The classes StdDraw and Luminance need to be in the
 same directory as this program.
@@ -75,32 +76,43 @@ public class E1 {
    * The program.
    * You have to add code and replace code where indicated.
    */
+
   public static void main(String[] args) {
-    Color x = new Color(Integer.parseInt(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]));
-    Color xy = new Color(Integer.parseInt(args[3]), Integer.parseInt(args[4]), Integer.parseInt(args[5]));
-    Color z = new Color(0, 0, 0);
-    Color y = new Color(0, 0, 0);
+    Color pc = new Color(Integer.parseInt(args[0]), Integer.parseInt(args[1]), Integer.parseInt(args[2]));
+    Color pc1 = new Color(Integer.parseInt(args[3]), Integer.parseInt(args[4]), Integer.parseInt(args[5]));
+    Color colorChange1 = new Color(0, 0, 0);
+    Color colorChange2 = new Color(0, 0, 0);
 
     StdDraw.setXscale(0, 3);
     StdDraw.setYscale(0, 3);
 
-    drawInside(1.5, 1.5, 0.25, x, xy);
-    z = Luminance.toGray(x);
-    y = Luminance.toGray(xy);
+    // Replace StdDraw.BLACK and StdDraw.WHITE with the input colors
+    drawInside(1.5, 1.5, 0.25, pc, pc1);
 
-    drawInside(0.5, 0.5, 0.25, x, xy);
-    z = toRed(x);
-    y = toRed(xy);
+    colorChange1 = Luminance.toGray(pc);
+    colorChange2 = Luminance.toGray(pc1);
+    // Replace StdDraw.BLACK and StdDraw.WHITE with the gray variants of the input
+    // colors
+    drawInside(0.5, 0.5, 0.25, colorChange1, colorChange2);
 
-    drawInside(0.5, 2.5, 0.25, x, xy);
-    z = toGreen(x);
-    y = toGreen(xy);
+    colorChange1 = toRed(pc);
+    colorChange2 = toRed(pc1);
+    // Replace StdDraw.BLACK and StdDraw.WHITE with the red variants of the input
+    // colors
+    drawInside(0.5, 2.5, 0.25, colorChange1, colorChange2);
 
-    drawInside(2.5, 2.5, 0.25, x, xy);
-    z = toBlue(x);
-    y = toBlue(xy);
+    colorChange1 = toGreen(pc);
+    colorChange2 = toGreen(pc1);
+    // Replace StdDraw.BLACK and StdDraw.WHITE with the green variants of the input
+    // colors
+    drawInside(2.5, 2.5, 0.25, colorChange1, colorChange2);
 
-    drawInside(2.5, 0.5, 0.25, x, xy);
+    colorChange1 = toBlue(pc);
+    colorChange2 = toBlue(pc1);
+
+    // Replace StdDraw.BLACK and StdDraw.WHITE with the blue variants of the input
+    // colors
+    drawInside(2.5, 0.5, 0.25, colorChange1, colorChange2);
 
   }
 }

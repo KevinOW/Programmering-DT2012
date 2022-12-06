@@ -16,11 +16,11 @@ import java.awt.Color;
 
 public class E4 {
   public static void main(String[] args) {
-    int w = Integer.parseInt(args[0]);
-    int h = Integer.parseInt(args[1]);
-    Picture _pic = new Picture(w, h);
-    for (int col = 0; col < w; col++) {
-      for (int row = 0; row < h; row++) {
+    int width = Integer.parseInt(args[0]);
+    int height = Integer.parseInt(args[1]);
+    Picture _pic = new Picture(width, height);
+    for (int col = 0; col < width; col++) {
+      for (int row = 0; row < height; row++) {
         _pic.set(col, row, new Color(((int) (Math.random() * 255) + 1), ((int) (Math.random() * 255) + 1),
             ((int) (Math.random() * 255) + 1)));
       }

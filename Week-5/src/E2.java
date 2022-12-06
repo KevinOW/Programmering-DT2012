@@ -37,13 +37,13 @@ public class E2 {
    * different avalues of alpha: 1, 0.9, 0.8, 0.7 etc.
    */
   public static void main(String[] args) {
-    Color col1 = new Color(0, 0, 0);
-    Color col2 = new Color(255, 255, 255);
+    Color colum1 = new Color(0, 0, 0);
+    Color colum2 = new Color(255, 255, 255);
 
     Color c = new Color(0, 0, 0);
 
     for (int i = 0; i < 10; i++) {
-      c = mix(0.1 * (10 - i), col1, col2);
+      c = mix(0.1 * (10 - i), colum1, colum2);
       StdDraw.setPenColor(c);
       StdDraw.filledRectangle(0.1 * (i + 1), 0.5, 0.1, 0.5);
     }

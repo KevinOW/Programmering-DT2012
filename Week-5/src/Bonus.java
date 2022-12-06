@@ -35,38 +35,38 @@ public class Bonus {
    */
 
   private static Color average(Color[] colors, int[] weights) {
-    int Red = 0;
-    int Green = 0;
-    int Blue = 0;
+    int RED = 0;
+    int GREEN = 0;
+    int BLUE = 0;
     int count = 0;
     for (int i = 0; i < 9; i++) {
-      Red += (colors[i].getRed() * weights[i]);
-      Green += (colors[i].getGreen() * weights[i]);
-      Blue += (colors[i].getBlue() * weights[i]);
+      RED += (colors[i].getRed() * weights[i]);
+      GREEN += (colors[i].getGreen() * weights[i]);
+      BLUE += (colors[i].getBlue() * weights[i]);
 
       count++;
     }
-    Red /= count;
-    Green /= count;
-    Blue /= count;
+    RED /= count;
+    GREEN /= count;
+    BLUE /= count;
 
-    if (Red > 255) {
-      Red = 255;
-    } else if (Red < 0) {
-      Red = 0;
+    if (RED > 255) {
+      RED = 255;
+    } else if (RED < 0) {
+      RED = 0;
     }
-    if (Green > 255) {
-      Green = 255;
-    } else if (Green < 0) {
-      Green = 0;
+    if (GREEN > 255) {
+      GREEN = 255;
+    } else if (GREEN < 0) {
+      GREEN = 0;
     }
-    if (Blue > 255) {
-      Blue = 255;
-    } else if (Blue < 0) {
-      Blue = 0;
+    if (BLUE > 255) {
+      BLUE = 255;
+    } else if (BLUE < 0) {
+      BLUE = 0;
     }
 
-    return new Color((Red), (Green), (Blue));
+    return new Color((RED), (GREEN), (BLUE));
   }
 
   /*

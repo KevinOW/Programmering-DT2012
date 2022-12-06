@@ -1,3 +1,4 @@
+
 /*
 The program demonstrates a color and its complement.
 It uses a static method
@@ -28,14 +29,14 @@ public class E3 {
    * The three integers should be provided in the command liner
    */
   public static void main(String[] args) {
-    int Red = Integer.parseInt(args[0]);
-    int Green = Integer.parseInt(args[1]);
-    int Blue = Integer.parseInt(args[2]);
+    int RED = Integer.parseInt(args[0]);
+    int GREEN = Integer.parseInt(args[1]);
+    int BLUE = Integer.parseInt(args[2]);
 
-    Color col = new Color(Red, Green, Blue);
-    StdDraw.setPenColor(col);
+    Color colum = new Color(RED, GREEN, BLUE);
+    StdDraw.setPenColor(colum);
     StdDraw.filledSquare(0.5, 0.5, 0.25);
-    StdDraw.setPenColor(complement(col));
+    StdDraw.setPenColor(complement(colum));
     StdDraw.filledSquare(0.5, 0.5, 0.125);
   }
 
