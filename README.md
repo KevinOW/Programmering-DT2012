@@ -14,3 +14,5 @@ This is a repository for me to keep track of all my weekly assignments. Nothing 
 [Week 4](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-4)
 
 [Week 5](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-5)
+
+[Week 6](https://github.com/KevinOW/Programmering-DT2012/tree/main/Week-6)
