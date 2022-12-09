@@ -25,8 +25,6 @@
 
 */
 
-*/
-
 public class IntSet {
   /*
   Your code here: instance variables

@@ -15,8 +15,26 @@ public class ManyBalls{
    and return a bouncing ball described by these values.
   */
   public static BouncingBall nextBall(Scanner data){
-    // Your code here.
-    return null;
+    // Read the x-value for the center of the ball
+    double x = data.nextDouble();
+    // Read the y-value for the center of the ball
+    double y = data.nextDouble();
+    // Read the radius of the ball
+    double radius = data.nextDouble();
+    // Read the red, green, and blue components of the color
+    int red = data.nextInt();
+    int green = data.nextInt();
+    int blue = data.nextInt();
+    // Read the x-value of the velocity
+    double vx = data.nextDouble();
+    // Read the y-value of the velocity
+    double vy = data.nextDouble();
+
+    // Create a color object from the red, green, and blue values
+    Color color = new Color(red, green, blue);
+
+    // Construct and return a BouncingBall object with the given values
+    return new BouncingBall(x, y, radius, color, vx, vy);
   }
 
   /*
@@ -30,7 +48,7 @@ public class ManyBalls{
   }
 
 
-    
+
   /*
     Exercise 5:
     Complete the definition of drawAll that draws all the bouncing balls in
@@ -54,9 +72,9 @@ public class ManyBalls{
 
 
   /*
-  The definition of main is NOT an exercise: 
+  The definition of main is NOT an exercise:
   it is a test for your solutions to the exercises above.
-  
+
   A client program that animates n balls.
   The balls live in a square world [-10,10]
   The program reads the data for each ball from standard input.
@@ -70,9 +88,9 @@ public class ManyBalls{
 
   java ManyBalls 30 < 30balls
 
-  Or, better 
+  Or, better
 
- java RandomBalls 30 10 | java 30 
+ java RandomBalls 30 10 | java 30
 
   */
   public static void main(String[] args) {
