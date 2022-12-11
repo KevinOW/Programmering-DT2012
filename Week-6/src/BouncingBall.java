@@ -12,7 +12,7 @@ import java.awt.Color;
 
 public class BouncingBall {
   public static final int vx = 0;
-double x;
+  double x;
   double y;
   private double r;
   private Color color;
@@ -45,7 +45,6 @@ double x;
     stepX = velX;
     stepY = velY;
   }
-
 
   public void draw() {
     StdDraw.setPenColor(color);
