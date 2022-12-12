@@ -40,7 +40,7 @@ public class IntSet {
     }
 
     public static void main(String[] args) {
-        IntSet intSet = new IntSet(5);
+        IntSet intSet = new IntSet(6);
         intSet.addValue(2);
         intSet.addValue(4);
         intSet.addValue(6);
