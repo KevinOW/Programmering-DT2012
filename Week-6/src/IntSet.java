@@ -9,6 +9,7 @@ public class IntSet {
     }
 
     public IntSet(int n, int[] values) {
+
         array = new boolean[n + 1];
         for (int i = 0; i < values.length; i++) {
             array[values[i]] = true;
@@ -48,5 +49,6 @@ public class IntSet {
         System.out.println("intSet contains 6: " + intSet.has(6));
         System.out.println("intSet contains 6: " + intSet.has(6));
         System.out.println(intSet);
+
     }
 }
