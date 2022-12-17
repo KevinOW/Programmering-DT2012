@@ -17,17 +17,17 @@ public class E8{
     DiceView2 dv = new DiceView2(model);
     DiceController2 controller = new DiceController2(model, dv);
 
-    JFrame frame = new JFrame("E8");
-    frame.setLayout(new BorderLayout());
-    frame.add(dv, BorderLayout.CENTER);
+    JFrame f = new JFrame("E8");
+    f.setLayout(new BorderLayout());
+    f.add(dv, BorderLayout.CENTER);
     JButton rollButton = new JButton("ROLL");
-    frame.add(rollButton, BorderLayout.SOUTH);
+    f.add(rollButton, BorderLayout.SOUTH);
 
     rollButton.addActionListener(controller);
 
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-    frame.pack();
-    frame.setVisible(true);
+    f.pack();
+    f.setVisible(true);
   }
 }

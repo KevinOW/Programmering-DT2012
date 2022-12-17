@@ -30,10 +30,6 @@ import java.awt.BorderLayout;
 
 public class DiceView extends JPanel{
 
-    /*
-      See the example of a CounterView that we did in class
-      (included in the PDF file that describes the exercises)
-    */
     private DiceModel dm;
 
     public DiceView(DiceModel theModel){

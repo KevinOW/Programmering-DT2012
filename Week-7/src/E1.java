@@ -15,15 +15,15 @@ public class E1 {
       "</html>";
 
   public static void main(String[] cmdLn) {
-    JFrame frame = new JFrame("Throwing a dice");
-    frame.add(new JLabel(INSTR), BorderLayout.NORTH);
+    JFrame f = new JFrame("Throwing a dice");
+    f.add(new JLabel(INSTR), BorderLayout.NORTH);
     JButton btn = new JButton("ROLL");
-    frame.add(btn, BorderLayout.CENTER);
-    frame.add(btn, BorderLayout.SOUTH);
+    f.add(btn, BorderLayout.CENTER);
+    f.add(btn, BorderLayout.SOUTH);
     Roller roller = new Roller();
     btn.addActionListener(roller);
-    frame.pack();
-    frame.setVisible(true);
+    f.pack();
+    f.setVisible(true);
   }
 }
 

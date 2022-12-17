@@ -69,7 +69,6 @@ public class DiceView2 extends JPanel{
 
     theDice = new JLabel();
     add(theDice);
-
   }
 
   public void paintComponent(Graphics g){

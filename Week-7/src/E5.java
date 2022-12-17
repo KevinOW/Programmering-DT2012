@@ -13,17 +13,16 @@ public class E5{
     DiceView dv = new DiceView(model);
     DiceController controller = new DiceController(model, dv);
 
-    JFrame frame = new JFrame("E5");
-    frame.setLayout(new BorderLayout());
-    frame.add(dv, BorderLayout.CENTER);
+    JFrame f = new JFrame("E5");
+    f.setLayout(new BorderLayout());
+    f.add(dv, BorderLayout.CENTER);
     JButton rollButton = new JButton("ROLL");
-    frame.add(rollButton, BorderLayout.SOUTH);
+    f.add(rollButton, BorderLayout.SOUTH);
 
     rollButton.addActionListener(controller);
 
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
-    frame.pack();
-    frame.setVisible(true);
+    f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    f.pack();
+    f.setVisible(true);
   }
 }
